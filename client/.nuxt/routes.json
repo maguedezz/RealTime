@@ -1,5 +1,12 @@
 [
   {
+    "name": "login",
+    "path": "/login",
+    "component": "/home/make_it_worthy/RealTime/client/pages/login.vue",
+    "chunkName": "pages/login",
+    "_name": "_6213034c"
+  },
+  {
     "name": "index",
     "path": "/",
     "component": "/home/make_it_worthy/RealTime/client/pages/index.vue",

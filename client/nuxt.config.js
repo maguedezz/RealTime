@@ -21,6 +21,7 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
+      { src: './plugins/vue-observe-visibility', mode:'client' }
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -34,7 +35,24 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
+    '@nuxtjs/axios',
+    '@nuxtjs/auth-next'
   ],
+
+
+  auth: {
+  strategies: {
+    'laravelSanctum': {
+      provider: 'laravel/sanctum',
+      url: 'http://localhost:8000'
+    },
+  }
+},
+
+  axios: {
+    baseUrl: 'http://localhost:8000',
+    credentials: true
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {

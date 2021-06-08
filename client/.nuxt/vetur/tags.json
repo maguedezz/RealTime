@@ -1,5 +1,14 @@
 {
-  "Logo": {
-    "description": "Auto imported from components/Logo.vue"
+  "AppNav": {
+    "description": "Auto imported from components/AppNav.vue"
+  },
+  "AppPost": {
+    "description": "Auto imported from components/AppPost.vue"
+  },
+  "AppPostForm": {
+    "description": "Auto imported from components/AppPostForm.vue"
+  },
+  "AppPostLikes": {
+    "description": "Auto imported from components/AppPostLikes.vue"
   }
 }
